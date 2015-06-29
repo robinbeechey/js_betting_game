@@ -1,0 +1,23 @@
+#guess {
+  background-color: red;
+  width:100px;
+  height:100px;
+}
+
+#total_cash {
+  background-color: blue;
+  width:100px;
+  height:100px;
+}
+
+#answer {
+  background-color: green;
+  width:100px;
+  height:100px;
+}
+
+#play {
+  background-color: yellow;
+  width:100px;
+  height:100px;
+}
