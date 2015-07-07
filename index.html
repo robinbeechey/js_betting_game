@@ -4,22 +4,45 @@
 <title>JS betting game</title>
 
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </head>
 <body>
 
-<h1>betting game</h1>
+<h1 class="logo text-center">The Bet game</h1>
 
-<div id="guess"></div>
-<div id="total_cash"></div>
-<div id="answer"></div>
-<div id="play"></div>
+<div class="container top">
+  <div class="row">    
+    <input class="col-md-2 col-md-offset-5 guess guess_box" contenteditable="true" placeholder="Guess?"></input>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2 col-md-offset-5"  id="total_cash">
+      <p class="cash">$100</p>
+    </div>
+    <div class="col-md-1" id="start">
+    </div>
+  </div>
+
+  <div class="row">
+    <input class="bet text-center col-md-2 col-md-offset-5" contenteditable="true" placeholder="Place bet here $5-$10"></input>
+  </div>
+  <div class="row">
+    <p class="play text-center col-md-2 col-md-offset-5" >Answer</p>
+  </div>    
+</div>
 
 
+<script src="app.js"></script>
 
-<script src="application.js"></script>
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 
 </body>

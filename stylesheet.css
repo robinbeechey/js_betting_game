@@ -1,23 +1,99 @@
-#guess {
-  background-color: red;
-  width:100px;
-  height:100px;
+body { 
+  background: url(casino.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
+h1.logo {
+  padding-top: 10px;
+  color: white;
+}
+
+.top {
+  padding-top: 150px;
+}
+
+
 
 #total_cash {
-  background-color: blue;
-  width:100px;
+  background-color: #f9a64d;
   height:100px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  
 }
 
-#answer {
-  background-color: green;
-  width:100px;
-  height:100px;
+.cash {
+  text-align: center;
+  font-size:2.5em;
+  vertical-align: text-top;
+  padding-top: 14px;
+  padding-right: 10px;
+}
+.guess{
+  text-align: center;
+  font-size:3em;
+  vertical-align: text-top;
+  padding-top: 40px;
+  padding-right: 10px;
 }
 
-#play {
-  background-color: yellow;
-  width:100px;
-  height:100px;
+.guess_box {
+  background-color: #cecece;
+  height:150px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 10px;
 }
+
+.bet {
+  background-color: #ef2d2d;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  height:50px;
+}
+
+.play {
+  background-color: #ffe254;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  height:30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.start2 {  
+  background: -webkit-linear-gradient(#4f68f7, #232f70); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#4f68f7, #232f70); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#4f68f7, #232f70); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#4f68f7, #232f70);
+  -ms-transform: rotateX(25deg);
+  -webkit-transform: rotateX(25deg);
+  transform: rotateX(25deg);
+}
+
+
+#start {
+  background-color: #7589ff;
+  width: 10px;
+  height:100px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/*
+*{
+  border-style: dashed;
+  border-width: 1px;
+}
+*/
