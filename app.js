@@ -24,14 +24,29 @@ function getRandomNumber() {
 // function getPlayerInput() {
 
 // };
+
+function winner() {
+  var winnerMan = $('<h1 class="text-center winner">WINNER</h1>')
+  winnerMan.appendTo('.winner');
+  setTimeout(function() {
+    winnerMan.remove();  
+  }, 500);
+  
+
+};
  
 
 var startingCash = 100;
 var play = true;
-
-  $('#start').on('click', function() {
-    $("#start").toggleClass('start2').toggleClass('#start');
+var start =  $('#start')
+$('.restartbutton').hide();
+  start.on('click', function() {
+    start.toggleClass('start2').toggleClass(start);
+    setTimeout(function(){
+    start.toggleClass('start2');
+  },250);
     if (startingCash > 0) {
+
       var userGuess = $('.guess').val();
       var answer = getRandomNumber();
       bet = $('.bet').val();
@@ -39,18 +54,22 @@ var play = true;
       startingCash += (bet * 2);
       $('.cash').text('$' + startingCash).innerHTML;
       $('.play').text('YES! ' + answer).innerHTML;
+      winner();
     } else if ((userGuess > answer + 1) || (userGuess < answer - 1)) {
       startingCash -= bet;
       $('.cash').text('$' + startingCash).innerHTML;
       $('.cash').text('$' + startingCash).innerHTML;
-      $('.play').text('Wrong ' + answer).innerHTML;
+      $('.play').text('Wrong ' + answer).innerHTML;      
     } else {
       $('.cash').text('$' + startingCash).innerHTML;
       $('.play').text('Off by one! ' + answer).innerHTML;
     }
 
     } else {
-
+      $('.restartbutton').show().on('click', function(){
+        startingCash = 100;
+      });
+      $('.cash').text('$100').innerHTML;
     }
 })
 });

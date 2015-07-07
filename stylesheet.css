@@ -11,6 +11,13 @@ h1.logo {
   color: white;
 }
 
+.winner {
+  font-size:3em;
+  color: green;
+  margin:none;
+  position:float;
+}
+
 .top {
   padding-top: 150px;
 }
@@ -89,8 +96,8 @@ h1.logo {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-/*
-*{
+
+/**{
   border-style: dashed;
   border-width: 1px;
 }
